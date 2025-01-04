@@ -20,7 +20,6 @@ public class project01 {
             int window ;
             int[] result = new int[LOTTO_SIZE];
 
-
             while(in.hasNextInt() && pivot <= 48 ){
                 num = in.nextInt();
                 inPutNumber[pivot++] = num;
@@ -28,7 +27,6 @@ public class project01 {
 
             int[] number = Arrays.copyOfRange(inPutNumber, 0 , pivot);
             Arrays.sort(number);
-
 
             window = pivot - LOTTO_SIZE;
             for(int i = 0; i <= window;i++){
@@ -56,9 +54,6 @@ public class project01 {
                     }
                 }
             }
-
-
-
         }catch (IOException e){
             e.printStackTrace();
         }
